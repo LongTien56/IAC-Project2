@@ -1,0 +1,204 @@
+2023-08-05 18:26:01,324 p=5874 u=ansible n=ansible | PLAY [ubuntu] ***********************************************************************************************************************************************
+2023-08-05 18:26:01,332 p=5874 u=ansible n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-08-05 18:26:02,500 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:02,528 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:02,564 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:02,593 p=5874 u=ansible n=ansible | TASK [apt-get update] ***************************************************************************************************************************************
+2023-08-05 18:26:04,331 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:04,391 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:04,530 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:04,535 p=5874 u=ansible n=ansible | TASK [install nginx] ****************************************************************************************************************************************
+2023-08-05 18:26:07,250 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:07,337 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:07,500 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:07,505 p=5874 u=ansible n=ansible | TASK [create www directory] *********************************************************************************************************************************
+2023-08-05 18:26:07,921 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:07,966 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:07,983 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:07,988 p=5874 u=ansible n=ansible | TASK [delete default nginx site] ****************************************************************************************************************************
+2023-08-05 18:26:08,299 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:08,378 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:08,380 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:08,385 p=5874 u=ansible n=ansible | TASK [copy nginx site.conf] *********************************************************************************************************************************
+2023-08-05 18:26:09,106 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:09,106 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:09,177 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:09,182 p=5874 u=ansible n=ansible | TASK [nginx status] *****************************************************************************************************************************************
+2023-08-05 18:26:09,560 p=5874 u=ansible n=ansible | changed: [ubuntu3]
+2023-08-05 18:26:09,645 p=5874 u=ansible n=ansible | changed: [ubuntu1]
+2023-08-05 18:26:09,647 p=5874 u=ansible n=ansible | changed: [ubuntu2]
+2023-08-05 18:26:09,652 p=5874 u=ansible n=ansible | TASK [report status] ****************************************************************************************************************************************
+2023-08-05 18:26:09,676 p=5874 u=ansible n=ansible | skipping: [ubuntu1]
+2023-08-05 18:26:09,677 p=5874 u=ansible n=ansible | skipping: [ubuntu2]
+2023-08-05 18:26:09,685 p=5874 u=ansible n=ansible | skipping: [ubuntu3]
+2023-08-05 18:26:09,692 p=5874 u=ansible n=ansible | TASK [sync website] *****************************************************************************************************************************************
+2023-08-05 18:26:10,288 p=5874 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:26:10,348 p=5874 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:26:10,435 p=5874 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:26:10,442 p=5874 u=ansible n=ansible | TASK [Always do this] ***************************************************************************************************************************************
+2023-08-05 18:26:10,469 p=5874 u=ansible n=ansible | ok: [ubuntu1] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:26:10,470 p=5874 u=ansible n=ansible | ok: [ubuntu2] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:26:10,483 p=5874 u=ansible n=ansible | ok: [ubuntu3] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:26:10,545 p=5874 u=ansible n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-08-05 18:26:10,545 p=5874 u=ansible n=ansible | ubuntu1                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:26:10,545 p=5874 u=ansible n=ansible | ubuntu2                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:26:10,545 p=5874 u=ansible n=ansible | ubuntu3                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:49:44,568 p=6153 u=ansible n=ansible | PLAY [ubuntu] ***********************************************************************************************************************************************
+2023-08-05 18:49:44,576 p=6153 u=ansible n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-08-05 18:49:45,653 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:45,747 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:45,794 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:45,823 p=6153 u=ansible n=ansible | TASK [apt-get update] ***************************************************************************************************************************************
+2023-08-05 18:49:47,529 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:47,686 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:47,740 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:47,745 p=6153 u=ansible n=ansible | TASK [install nginx] ****************************************************************************************************************************************
+2023-08-05 18:49:50,450 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:50,639 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:50,685 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:50,689 p=6153 u=ansible n=ansible | TASK [create www directory] *********************************************************************************************************************************
+2023-08-05 18:49:51,094 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:51,148 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:51,165 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:51,171 p=6153 u=ansible n=ansible | TASK [delete default nginx site] ****************************************************************************************************************************
+2023-08-05 18:49:51,491 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:51,497 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:51,600 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:51,605 p=6153 u=ansible n=ansible | TASK [copy nginx site.conf] *********************************************************************************************************************************
+2023-08-05 18:49:52,319 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:52,358 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:52,426 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:52,432 p=6153 u=ansible n=ansible | TASK [nginx status] *****************************************************************************************************************************************
+2023-08-05 18:49:52,838 p=6153 u=ansible n=ansible | changed: [ubuntu3]
+2023-08-05 18:49:52,911 p=6153 u=ansible n=ansible | changed: [ubuntu1]
+2023-08-05 18:49:52,919 p=6153 u=ansible n=ansible | changed: [ubuntu2]
+2023-08-05 18:49:52,924 p=6153 u=ansible n=ansible | TASK [report status] ****************************************************************************************************************************************
+2023-08-05 18:49:52,947 p=6153 u=ansible n=ansible | skipping: [ubuntu1]
+2023-08-05 18:49:52,947 p=6153 u=ansible n=ansible | skipping: [ubuntu2]
+2023-08-05 18:49:52,955 p=6153 u=ansible n=ansible | skipping: [ubuntu3]
+2023-08-05 18:49:52,966 p=6153 u=ansible n=ansible | TASK [sync website] *****************************************************************************************************************************************
+2023-08-05 18:49:53,541 p=6153 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:49:53,619 p=6153 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:49:53,700 p=6153 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:49:53,705 p=6153 u=ansible n=ansible | TASK [Always do this] ***************************************************************************************************************************************
+2023-08-05 18:49:53,727 p=6153 u=ansible n=ansible | ok: [ubuntu1] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:49:53,732 p=6153 u=ansible n=ansible | ok: [ubuntu2] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:49:53,744 p=6153 u=ansible n=ansible | ok: [ubuntu3] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:49:53,799 p=6153 u=ansible n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-08-05 18:49:53,800 p=6153 u=ansible n=ansible | ubuntu1                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:49:53,800 p=6153 u=ansible n=ansible | ubuntu2                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:49:53,800 p=6153 u=ansible n=ansible | ubuntu3                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:50:16,383 p=6426 u=ansible n=ansible | PLAY [ubuntu] ***********************************************************************************************************************************************
+2023-08-05 18:50:16,391 p=6426 u=ansible n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-08-05 18:50:17,340 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:17,435 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:17,472 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:17,500 p=6426 u=ansible n=ansible | TASK [apt-get update] ***************************************************************************************************************************************
+2023-08-05 18:50:19,215 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:19,308 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:19,418 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:19,422 p=6426 u=ansible n=ansible | TASK [install nginx] ****************************************************************************************************************************************
+2023-08-05 18:50:22,153 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:22,255 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:22,277 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:22,282 p=6426 u=ansible n=ansible | TASK [create www directory] *********************************************************************************************************************************
+2023-08-05 18:50:22,659 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:22,728 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:22,773 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:22,780 p=6426 u=ansible n=ansible | TASK [delete default nginx site] ****************************************************************************************************************************
+2023-08-05 18:50:23,076 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:23,168 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:23,179 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:23,185 p=6426 u=ansible n=ansible | TASK [copy nginx site.conf] *********************************************************************************************************************************
+2023-08-05 18:50:23,861 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:23,881 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:23,952 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:23,957 p=6426 u=ansible n=ansible | TASK [nginx status] *****************************************************************************************************************************************
+2023-08-05 18:50:24,381 p=6426 u=ansible n=ansible | changed: [ubuntu3]
+2023-08-05 18:50:24,393 p=6426 u=ansible n=ansible | changed: [ubuntu2]
+2023-08-05 18:50:24,461 p=6426 u=ansible n=ansible | changed: [ubuntu1]
+2023-08-05 18:50:24,466 p=6426 u=ansible n=ansible | TASK [report status] ****************************************************************************************************************************************
+2023-08-05 18:50:24,487 p=6426 u=ansible n=ansible | skipping: [ubuntu1]
+2023-08-05 18:50:24,494 p=6426 u=ansible n=ansible | skipping: [ubuntu2]
+2023-08-05 18:50:24,503 p=6426 u=ansible n=ansible | skipping: [ubuntu3]
+2023-08-05 18:50:24,510 p=6426 u=ansible n=ansible | TASK [sync website] *****************************************************************************************************************************************
+2023-08-05 18:50:25,113 p=6426 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:25,214 p=6426 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:25,218 p=6426 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:25,225 p=6426 u=ansible n=ansible | TASK [Always do this] ***************************************************************************************************************************************
+2023-08-05 18:50:25,253 p=6426 u=ansible n=ansible | ok: [ubuntu1] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:50:25,255 p=6426 u=ansible n=ansible | ok: [ubuntu2] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:50:25,264 p=6426 u=ansible n=ansible | ok: [ubuntu3] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:50:25,314 p=6426 u=ansible n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-08-05 18:50:25,315 p=6426 u=ansible n=ansible | ubuntu1                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:50:25,315 p=6426 u=ansible n=ansible | ubuntu2                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:50:25,315 p=6426 u=ansible n=ansible | ubuntu3                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:50:42,879 p=6690 u=ansible n=ansible | PLAY [ubuntu] ***********************************************************************************************************************************************
+2023-08-05 18:50:42,887 p=6690 u=ansible n=ansible | TASK [Gathering Facts] **************************************************************************************************************************************
+2023-08-05 18:50:43,806 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:43,915 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:43,975 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:44,002 p=6690 u=ansible n=ansible | TASK [apt-get update] ***************************************************************************************************************************************
+2023-08-05 18:50:45,663 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:45,764 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:45,861 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:45,865 p=6690 u=ansible n=ansible | TASK [install nginx] ****************************************************************************************************************************************
+2023-08-05 18:50:49,028 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:49,168 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:49,344 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:49,349 p=6690 u=ansible n=ansible | TASK [create www directory] *********************************************************************************************************************************
+2023-08-05 18:50:49,804 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:49,841 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:49,923 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:49,928 p=6690 u=ansible n=ansible | TASK [delete default nginx site] ****************************************************************************************************************************
+2023-08-05 18:50:50,313 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:50,375 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:50,386 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:50,392 p=6690 u=ansible n=ansible | TASK [copy nginx site.conf] *********************************************************************************************************************************
+2023-08-05 18:50:51,179 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:51,225 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:51,327 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:51,333 p=6690 u=ansible n=ansible | TASK [nginx status] *****************************************************************************************************************************************
+2023-08-05 18:50:51,805 p=6690 u=ansible n=ansible | changed: [ubuntu2]
+2023-08-05 18:50:51,857 p=6690 u=ansible n=ansible | changed: [ubuntu3]
+2023-08-05 18:50:51,918 p=6690 u=ansible n=ansible | changed: [ubuntu1]
+2023-08-05 18:50:51,923 p=6690 u=ansible n=ansible | TASK [report status] ****************************************************************************************************************************************
+2023-08-05 18:50:51,953 p=6690 u=ansible n=ansible | skipping: [ubuntu1]
+2023-08-05 18:50:51,953 p=6690 u=ansible n=ansible | skipping: [ubuntu2]
+2023-08-05 18:50:51,964 p=6690 u=ansible n=ansible | skipping: [ubuntu3]
+2023-08-05 18:50:51,971 p=6690 u=ansible n=ansible | TASK [sync website] *****************************************************************************************************************************************
+2023-08-05 18:50:52,663 p=6690 u=ansible n=ansible | ok: [ubuntu1]
+2023-08-05 18:50:52,700 p=6690 u=ansible n=ansible | ok: [ubuntu3]
+2023-08-05 18:50:52,783 p=6690 u=ansible n=ansible | ok: [ubuntu2]
+2023-08-05 18:50:52,788 p=6690 u=ansible n=ansible | TASK [Always do this] ***************************************************************************************************************************************
+2023-08-05 18:50:52,811 p=6690 u=ansible n=ansible | ok: [ubuntu1] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:50:52,812 p=6690 u=ansible n=ansible | ok: [ubuntu2] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:50:52,824 p=6690 u=ansible n=ansible | ok: [ubuntu3] => {
+    "msg": "This always executes, :-)"
+}
+2023-08-05 18:50:52,884 p=6690 u=ansible n=ansible | PLAY RECAP **************************************************************************************************************************************************
+2023-08-05 18:50:52,885 p=6690 u=ansible n=ansible | ubuntu1                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:50:52,885 p=6690 u=ansible n=ansible | ubuntu2                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+2023-08-05 18:50:52,885 p=6690 u=ansible n=ansible | ubuntu3                    : ok=9    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   

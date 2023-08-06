@@ -1,0 +1,14 @@
+[control]
+ubuntu-c ansible_connection=local
+
+
+[ubuntu]
+ubuntu[1:3]
+
+
+[ubuntu:vars]
+ansible_become=true
+ansible_become_pass=password
+
+[linux:children]
+ubuntu

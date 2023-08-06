@@ -1,0 +1,71 @@
+---
+- hosts: all
+  vars:
+    domain: helloworld.com
+  become: yes
+  tasks:
+    - name: "install nginx on ubuntu"
+      block:
+        - name: "apt-get update"
+          apt:
+            update_cache: yes
+            cache_valid_time: 3600
+
+        - name: "install nginx"
+          apt:
+            name: ['nginx']
+            state: latest
+          tags:
+            - always
+
+        - name: "create www directory"
+          file:
+            path: /var/www/{{ domain }}
+            state: directory
+            mode: '0775'
+
+        - name: delete default nginx site
+          file:
+            path: /etc/nginx/sites-enabled/default
+            state: absent
+          notify: restart nginx
+
+        - name: copy nginx site.conf
+          template:
+            src: site.conf.j2
+            dest: /etc/nginx/sites-enabled/{{ domain }}
+            owner: root
+            group: root
+            mode: '0644'
+          notify: restart nginx
+
+        - name: nginx status
+          command: service nginx status
+          register: command_output
+
+        - name: report status
+          command: echo "Something wrong!"
+          when: command_output.stdout.find("wrong") != -1
+          notify: restart nginx
+        
+        - import_tasks: sync.yml 
+        
+      always:
+        - name: Always do this
+          ansible.builtin.debug:
+            msg: "This always executes, :-)"
+
+      rescue:
+        - name: roll back
+          package:
+            name: ['nginx']
+            state: absent
+  handlers:
+    - name: restart nginx
+      service:
+        name: nginx
+        state: restarted
+
+
+
+
